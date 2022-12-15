@@ -21,7 +21,7 @@ function gws_display_wootric__nps_code() {
         $current_user_email = $current_user->user_email;
         $wootric_nps_account_token = get_option('wootric_nps_account_token');
         if(!empty($current_user_email) && !empty($wootric_nps_account_token)){
-            $udata = get_userdata( $current_user-ID );
+            $udata = get_userdata( $current_user->ID );
             $registered = $udata->user_registered;
             ?>
             <!-- begin Wootric code -->
